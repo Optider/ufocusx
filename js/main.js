@@ -4,10 +4,10 @@ $(window).on("blur focus", function(e) {
     if (prevType != e.type) {   //  reduce double fire issues
         switch (e.type) {
             case "blur":
-                $('div').text("Blured"); // modify text to display status
+                $('div').text("ALERT TEACHER!!! Student made unexpected attempt."); // modify text to display status
                 break;
             case "focus":
-                $('div').text("Focused"); // modify text to display status
+                $('div').text("Focused! Student is paying attention."); // modify text to display status
                 break;
         }
     }
